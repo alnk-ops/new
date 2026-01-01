@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HI</title>
+  <meta charset="UTF-8">
+  <title>Interactive Web App</title>
+  <script src="script.js"></script>
+
+  <!-- Basic styling for clean UI -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px;
+      margin: 5px 0;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <!-- ===== API SECTION ===== -->
+  <h2>Fetch Random Joke</h2>
+  <button id="fetchBtn">Fetch Data</button>
+  <p id="apiResult">Click the button to fetch a joke</p>
+
+  <hr>
+
+  <!-- ===== TODO SECTION ===== -->
+  <h2>Todo List</h2>
+
+  <!-- Input field to enter task -->
+  <input type="text" id="taskInput" placeholder="Enter a task">
+
+  <!-- Button to add task -->
+  <button id="addTaskBtn">Add Task</button>
+
+  <!-- Task list -->
+  <ul id="taskList"></ul>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
